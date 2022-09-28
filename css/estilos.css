@@ -1,0 +1,226 @@
+/*font-family: 'Open Sans', sans-serif;*/
+
+body{
+    font-family: 'Open Sans', sans-serif  
+}
+
+header{
+    background-color: rgba(39, 29, 152, 0.908);
+    padding-top: 16px;
+}
+
+header h1{
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    display:inline-block;
+    position: relative;
+    bottom: 50px; 
+    margin: 0;   
+}
+
+nav{
+    background-color: rgb(28, 149, 149);
+    margin-bottom: 20px;
+}
+
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgb(37, 29, 138);
+}
+
+nav ul li a.activo{
+    background-color: rgb(37, 29, 138);
+}
+
+footer{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+h2{
+    color: lightskyblue;
+    font-weight: 400;
+}
+
+.homeimg img{
+max-width: 100%;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 16px;
+   /* background-color: aqua;*/
+}
+
+.testimonios{
+    width: 25%;
+   /* background-color: aquamarine;*/
+   padding-right: 25px;
+}
+
+.columnas{
+    display: flex;
+}
+
+.testimonio{
+background-color: lightgray;
+padding: 16px;
+}
+
+.testimonio .cita{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+}
+
+header img{
+    border-radius: 100px;
+}
+
+.historia p{
+    font-size: 13px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 18%;  
+    text-align: center; 
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50px;
+    max-width: 65%;
+    box-shadow: 0 0 5px black;
+    margin: 13px 0 16px;
+
+}
+
+.persona h5,
+.persona h6{
+    color: lightblue;
+    font-weight: normal;
+    margin: 0;
+}
+.persona h5{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.persona h6{
+    font-style: italic;
+}
+
+.persona p{
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+.servivio{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 16px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.info h4{
+    color: #2e64a1;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 8px;
+}
+
+.servivio img{
+    max-width: 225px;
+    display: block;
+    border-radius: 15px;
+}
+
+.servivio:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+@media screen and (max-width:550px) {
+    /*aqui van todas las modificaciones de movil*/
+    .columnas{
+        flex-direction: column;
+    }
+
+    .bienvenidos, .testimonios{
+        width: 100%;
+    }
+
+    .testimonios{
+        display: none;
+    }
+
+    main.holder{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .personas{
+        flex-wrap: wrap;
+    }
+
+    .persona{
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+}
+
+
+
+
